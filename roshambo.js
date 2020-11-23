@@ -1,3 +1,20 @@
+const container = document.querySelector('#container');
+
+const rock = document.createElement('button');
+rock.id = "rock";
+rock.textContent = "ROCK!!!";
+container.appendChild(rock);
+
+const paper = document.createElement('button');
+paper.id = "paper";
+paper.textContent = "PAPER!!!";
+container.appendChild(paper);
+
+const scissors = document.createElement('button');
+scissors.id = "scissors";
+scissors.textContent = "SCISSORS!!!";
+container.appendChild(scissors);
+
 function computerPlay() {
     const shoot = ['Rock!', 'Paper!', 'Scissors!'];
     let rand = Math.floor(Math.random()*shoot.length);
@@ -24,23 +41,6 @@ function playRound(playerSelection) {
         console.log(results = 'Draw');
     }
 }
-
-// function game() {
-//     let games = 0; 
-//     while (games < 5) {
-//         let playerSelection = prompt('CHOOSE YOUR FIGHTER!!!1!!111');
-//         const computerSelection = computerPlay();
-//         console.log(playRound(playerSelection, computerSelection));
-//         games++;
-//     }
-//     if (wins > losses) {
-//             console.log(`CONGRATULATIONS!!!1!!111 >:D Player - ${wins} | CPU - ${losses} | Draws - ${draws}`);
-//         } else if (wins < losses) {
-//             console.log(`you lost the match... :( Player - ${wins} | CPU - ${losses} | Draws - ${draws}`);
-//         } else {
-//             console.log(`Whoa... It's a tie!! :O Player - ${wins} | CPU ${losses} | Draws - ${draws}`);
-//         }
-// }
 
 const buttons = document.querySelectorAll('button');
 
