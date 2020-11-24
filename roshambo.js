@@ -1,5 +1,19 @@
 const container = document.querySelector('#container');
 
+const playerScore = document.createElement('div');
+playerScore.style.border = 'solid black';
+playerScore.style.width = '227px';
+playerScore.style.textAlign = 'center';
+playerScore.textContent = '00';
+container.appendChild(playerScore);
+
+const computerScore = document.createElement('div');
+computerScore.style.border = 'solid black';
+computerScore.style.width = '227px';
+computerScore.style.textAlign = 'center';
+computerScore.textContent = '00';
+container.appendChild(computerScore);
+
 const rock = document.createElement('button');
 rock.id = "rock";
 rock.textContent = "ROCK!!!";
